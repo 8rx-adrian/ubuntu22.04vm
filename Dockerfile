@@ -76,7 +76,6 @@ fi
 
 # Start VM
 qemu-system-x86_64 \
-    -enable-kvm \
     -cpu host \
     -smp 255 \
     -m 921600 \
