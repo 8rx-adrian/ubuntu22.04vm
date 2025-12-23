@@ -70,8 +70,8 @@ fi
 qemu-system-x86_64 \
   -machine accel=tcg \
   -cpu qemu64 \
-  -smp 24 \
-  -m 128048 \
+  -smp 4 \
+  -m 32048 \
   -drive file="$DISK",if=virtio \
   -drive file="$SEED",media=cdrom \
   -netdev user,id=net0,hostfwd=tcp::2222-:22 \
